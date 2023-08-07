@@ -89,3 +89,19 @@ aside{
     gap: 3rem;
 }
 
+.icon-list > li {
+    position: relative;
+}
+
+.icon-list > li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: .5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--clr-neutral-100);
+    background: yellow;
+    
+}
+
