@@ -36,6 +36,7 @@ html{
 }
 
 body{
+    margin: 0;
     background-color: var(--clr-primary-800);
     color: var(--clr-neutral-100);
     font-family: var(--ff-base);
@@ -80,9 +81,11 @@ aside{
 .icon-list {
     border-left: 1px solid orange;
     height: 100%;
-    margin-left: 10px;
+    margin-left: 4rem !important;
+    margin: 0;
     list-style: none;
     display: grid;
+    align-content: center;
     gap: 3rem;
 }
 
