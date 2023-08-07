@@ -99,7 +99,7 @@ aside{
 .icon-list > li::after{
     content: "";
     position: absolute;
-    left: 0;
+    left: -4px;
     top: 0;
     width: .5rem;
     aspect-ratio: 1;
