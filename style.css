@@ -58,7 +58,7 @@ body{
     display: grid;
     grid-template-columns: 15rem auto;
     grid-auto-flow: dense;
-    /* align-items: center; */
+    align-items: center;
     min-height: 100vh;
     min-height: 100dvh;
 }
@@ -74,4 +74,9 @@ aside{
 .job-experience{
     display: grid;
     grid-auto-flow: column;
+}
+
+ul {
+    display: grid;
+    gap: 3rem;
 }
