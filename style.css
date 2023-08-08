@@ -57,7 +57,7 @@ body{
 
 .main-grid{
     display: grid;
-    grid-template-columns: 17 1fr;
+    grid-template-columns: 17rem 1fr;
     gap: clamp(3rem, 5vw, 10rem);
     grid-auto-flow: dense;
     align-items: center;
@@ -94,6 +94,7 @@ aside{
 }
 
 .job {
+    width: 28.5rem;
     border-radius: 0.25rem;
     padding: 2rem;
     background: var(--clr-primary-800);
@@ -101,11 +102,12 @@ aside{
 
 .job-experience{
     display: grid;
+    gap: 1rem;
     grid-auto-flow: column;
 }
 
 .icon-list {
-    border-left: 1px solid var(--clr-primary-200);
+    border-left: 1px solid var(--clr-primary-300);
     padding: 0;
     height: 100%;
     margin-left: clamp(3rem, 10vw, 10rem) !important;
