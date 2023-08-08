@@ -57,8 +57,8 @@ body{
 
 .main-grid{
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: clamp(3rem, 15vw, 10rem);
+    grid-template-columns: 17 1fr;
+    gap: clamp(3rem, 5vw, 10rem);
     grid-auto-flow: dense;
     align-items: center;
     min-height: 100vh;
@@ -72,6 +72,21 @@ main{
 aside{
     grid-column: 1;
     align-self: stretch;
+}
+
+.eyebrow {
+    color: var(--clr-secondary-400);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0;
+}
+
+.page-title {
+    font-size: var(--fs-700);
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .job-experience{
