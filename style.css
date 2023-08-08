@@ -89,6 +89,16 @@ aside{
     margin: 0;
 }
 
+.intro {
+    font-size: var(--fs-500);
+}
+
+.job {
+    border-radius: 0.25rem;
+    padding: 2rem;
+    background: var(--clr-primary-800);
+}
+
 .job-experience{
     display: grid;
     grid-auto-flow: column;
