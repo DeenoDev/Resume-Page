@@ -56,9 +56,12 @@ body{
 }
 
 .main-grid{
+    --_aside-width: clamp(7.5rem, 20vw, 15rem);
+    --_main-width: 1fr;
+    --_gap-size: 10vw;
     display: grid;
-    grid-template-columns: clamp(7.5rem, 20vw, 15rem) 1fr;
-    gap: 5vw;
+    grid-template-columns: var(--_aside-width) var(--_main-width);
+    gap: 10vw;
     grid-auto-flow: dense;
     align-items: center;
     min-height: 100vh;
@@ -68,7 +71,7 @@ body{
 main{
     padding-block: 2rem;
     grid-column: 2;
-    width: calc(100vw - 15rem - 7vw);
+    width: calc(100vw - clamp(7.5rem, 20vw, 15rem) - 10vw);
 }
 
 aside{
@@ -117,7 +120,7 @@ aside{
     position: absolute;
     color: var(--clr-accent-400);
     top: 0rem;
-    left: 0rem;
+    left: 2rem;
     
 }
 
