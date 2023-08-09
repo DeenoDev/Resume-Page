@@ -104,6 +104,12 @@ aside{
     margin: 0;
 }
 
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
 .job-experience{
     display: grid;
     gap: 1rem;
