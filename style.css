@@ -117,6 +117,7 @@ aside{
     gap: 1rem;
     grid-auto-flow: column;
     overflow-x: auto;
+    padding-bottom: 2rem;
 }
 
 .job-experience::-webkit-scrollbar{
@@ -127,7 +128,8 @@ aside{
 
 }
 .job-experience::-webkit-scrollbar-thumb{
-    background-color: var(--clr-primary-400);
+    background-color: var(--clr-accent-400);
+    border-radius: 100vw;
 
 }
 
