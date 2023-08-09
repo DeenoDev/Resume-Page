@@ -66,6 +66,7 @@ body{
 }
 
 main{
+    padding-block: 2rem;
     grid-column: 2;
     width: calc(100vw - 15rem - 7vw);
 }
@@ -88,6 +89,7 @@ aside{
     font-size: var(--fs-700);
     text-transform: uppercase;
     margin: 0;
+    
 }
 
 .intro {
@@ -132,6 +134,12 @@ aside{
     position: relative;
     padding-block: 2rem;
     scrollbar-color: var(--clr-accent-400) var(--clr-primary-800);
+}
+
+.job-experience::after{
+    content: "";
+    width: 50px;
+    background: transparent;
 }
 
 .job-experience::-webkit-scrollbar{
