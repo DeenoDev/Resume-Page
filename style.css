@@ -67,6 +67,8 @@ body{
 
 main{
     grid-column: 2;
+    
+    width: calc(100vw - 17rem);
 }
 
 aside{
@@ -115,6 +117,12 @@ aside{
     display: grid;
     gap: 1rem;
     grid-auto-flow: column;
+    overflow-x: auto;
+}
+
+.role{
+    font-size: var(--fs-600);
+    line-height: 1.2;
 }
 
 .company{
