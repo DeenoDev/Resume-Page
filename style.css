@@ -57,7 +57,7 @@ body{
 
 .main-grid{
     display: grid;
-    grid-template-columns: 15rem 1fr;
+    grid-template-columns: clamp(7.5rem, 20vw, 15rem) 1fr;
     gap: 5vw;
     grid-auto-flow: dense;
     align-items: center;
@@ -74,6 +74,8 @@ main{
 aside{
     grid-column: 1;
     align-self: stretch;
+    display: flex;
+    justify-content: end;
 }
 
 .eyebrow {
@@ -89,6 +91,7 @@ aside{
     font-size: var(--fs-700);
     text-transform: uppercase;
     margin: 0;
+    line-height: 1;
     
 }
 
@@ -177,7 +180,7 @@ aside{
     border-left: 1px solid var(--clr-primary-300);
     padding: 0;
     height: 100%;
-    margin-left: clamp(3rem, 10vw, 10rem) !important;
+    /* margin-left: clamp(3rem, 10vw, 10rem) !important; */
     margin: 0;
     list-style: none;
     display: grid;
