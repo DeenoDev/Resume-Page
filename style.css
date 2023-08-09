@@ -107,13 +107,21 @@ aside{
 .job-info {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: baseline;
+    margin-bottom: 1rem;
 }
 
 .job-experience{
     display: grid;
     gap: 1rem;
     grid-auto-flow: column;
+}
+
+.company{
+    color: var(--clr-primary-200);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
 }
 
 .icon-list {
