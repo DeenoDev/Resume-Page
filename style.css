@@ -57,8 +57,8 @@ body{
 
 .main-grid{
     display: grid;
-    grid-template-columns: 17rem 1fr;
-    gap: clamp(3rem, 5vw, 10rem);
+    grid-template-columns: 15rem 1fr;
+    gap: 5vw;
     grid-auto-flow: dense;
     align-items: center;
     min-height: 100vh;
@@ -67,7 +67,7 @@ body{
 
 main{
     grid-column: 2;
-    width: calc(100vw - 20rem);
+    width: calc(100vw - 15rem - 7vw);
 }
 
 aside{
@@ -114,6 +114,7 @@ aside{
 
 .job-experience{
     display: grid;
+    justify-content: start;
     gap: 1rem;
     grid-auto-flow: column;
     overflow-x: auto;
@@ -125,6 +126,7 @@ aside{
 }
 .job-experience::-webkit-scrollbar-track{
     background-color: var(--clr-primary-800);
+    border-radius: 100vw;
 
 }
 .job-experience::-webkit-scrollbar-thumb{
@@ -143,6 +145,11 @@ aside{
     font-size: var(--fs-300);
     font-weight: var(--fw-bold);
     text-transform: uppercase;
+}
+
+.year{
+    color: var(--clr-accent-400);
+    font-size: var(--fw-bold);
 }
 
 .icon-list {
